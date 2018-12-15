@@ -31,7 +31,7 @@ function buildCharts(sample) {
     var pieTopLabels = data.otu_labels.slice(0, 10);
     var pieTopValues  = data.sample_values.slice(0, 10);
     var pieData = [{"labels": pieTopIds, "values": pieTopValues, "hovertext": pieTopLabels, "type": "pie"}];
-    layout2 = {title: "Top 10 Samples"};
+    layout2 = {title: "First 10 Bacterial Samples"};
     Plotly.newPlot('pie', pieData, layout2);
 
   })    
